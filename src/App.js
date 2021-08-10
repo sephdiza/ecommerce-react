@@ -4,15 +4,15 @@ import "./App.css"
 
 import Homepage from "./pages/homepage/Homepage"
 import Shop from "./pages/shop/Shop"
+import Header from "./components/header/Header"
 
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
-        <div className="App">
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/shop" component={Shop} />
-        </div>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/shop" component={Shop} />
       </Switch>
     </Router>
   )
